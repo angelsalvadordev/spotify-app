@@ -1,0 +1,8 @@
+<app-spinner *ngIf="loading"></app-spinner>
+
+<app-error-message
+  [showError]="showError"
+  [errorMessage]="errorMessage"
+></app-error-message>
+
+<app-cards *ngIf="!showError" [items]="newSongs"></app-cards>
