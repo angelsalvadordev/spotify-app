@@ -5,4 +5,8 @@
   [errorMessage]="errorMessage"
 ></app-error-message>
 
+<div *ngIf="!loading">
+  <h3>New Releases</h3>
+  <hr />
+</div>
 <app-cards *ngIf="!showError" [items]="newSongs"></app-cards>

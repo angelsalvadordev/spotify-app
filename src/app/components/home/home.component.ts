@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
       (err) => {
         this.loading = false;
         this.showError = true;
-        this.errorMessage = err.error.error.message;
+        this.errorMessage = err.message;
       }
     );
   }
